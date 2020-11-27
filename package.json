@@ -1,0 +1,29 @@
+{
+  "name": "API-2.10.20",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bootstrap": "^4.5.3",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "webpack.config.js",
+  "description": ""
+}
