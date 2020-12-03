@@ -5,9 +5,14 @@
   "dependencies": {
     "axios": "^0.20.0",
     "bootstrap": "^4.5.3",
-    "lodash": "^4.17.20"
+    "jquery": "^3.5.1",
+    "jquery-ui": "^1.12.1",
+    "lightbox2": "^2.11.3",
+    "lodash": "^4.17.20",
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@webpack-cli/serve": "^1.1.0",
     "css-loader": "^5.0.1",
     "extract-loader": "^5.1.0",
     "file-loader": "^6.2.0",
@@ -15,10 +20,12 @@
     "sass-loader": "^10.0.5",
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
     "build": "webpack"
   },
   "keywords": [],
