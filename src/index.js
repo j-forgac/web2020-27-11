@@ -7,8 +7,6 @@ window.$ = $;
 
 setTimeout(function () {
     $(document).on("resize scroll", function () {
-        console.log($("#after-image").offset().top)
-        console.log(window.pageYOffset)
         if ($("#after-image").offset().top < window.pageYOffset + 60) {
             $('.menu').removeClass("basic-transparent");
             $('.menu').addClass("basic-visible");
@@ -21,3 +19,13 @@ setTimeout(function () {
     })
 }, 2500);
 
+$(function () {
+    $('.menu_child a').on('click', function (ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        window.scrollTo({
+            left: 0,
+            top: $($(this).attr('href')).offset().top - 70,
+        });
+    });
+});

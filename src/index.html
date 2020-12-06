@@ -11,26 +11,29 @@
 
 <div class="fixed-top menu basic-transparent">
     <div class="row menu_child">
-        <div class="col-lg-1">
-            <a class="buttons">Home</a>
+        <div class="col-lg-1"  >
+            <a class="buttons" href="#home">Home</a>
         </div>
         <div class="col-lg-1">
-            <a class="buttons">Gallery</a>
+            <a class="buttons" href="#gallery">Gallery</a>
         </div>
         <div class="col-lg-1">
-            <a class="buttons">Contacts</a>
+            <a class="buttons" href="#contacts">Contacts</a>
         </div>
         <div class="col-lg-2">
         </div>
         <div class="col-lg-2 logo">
             <img class="logo_pic" src="home_images/logowhite.png">
+            <div class="restaurant-name"></div>
         </div>
     </div>
 </div>
 
 <div id="myimages">
     <div>
-        <img src="home_images/img1.jpg">
+        <img class="main_iamge1 cropped1" src="home_images/uvod1.png">
+        <h1>Ristorante</h1>
+        <h3>Benito Mussolini</h3>
     </div>
 </div>
 
@@ -38,8 +41,8 @@
 
 <div class="text-about-us row">
     <div class="col-2"></div>
-    <div class="head col-8">
-        <p>About us,</p>
+    <div class="FascistManifesto col-8">
+        <p id="home">About us,</p>
         <div>
             Italiani!
 
@@ -80,38 +83,59 @@
 <div class="text-about-us row">
     <div class="col-2"></div>
     <div class="col-8 my_wrapper">
-        <div class="text_1">
+        <div class="text_1" id="gallery">
             GALLERY
         </div>
         <div class="gallery">
-            <div>
-                <img class="cropped2" src="home_images/margarita.jpg">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/food1.jpg">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/mussolini's_Mansion.jpg">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/mussolini's_Manision_interior.jpg">
-            </div>
+            <a href="home_images/margarita.jpg" data-lightbox="b" data-title="Pizza">
+                <div>
+                    <img class="cropped2" src="home_images/margarita.jpg">
+                </div>
+            </a>
 
-            <div>
-                <img class="cropped2" src="home_images/dish.jpg">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/cheff.jpg">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/cheff3.jpg">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/soup.PNG">
-            </div>
-            <div>
-                <img class="cropped2" src="home_images/pasta.jpg">
-            </div>
+            <a href="home_images/food1.jpg" data-lightbox="b" data-title="Delicacy">
+                <div>
+                    <img class="cropped2" src="home_images/food1.jpg">
+                </div>
+            </a>
+            <a href="home_images/mussolini's_Mansion.jpg" data-lightbox="b"
+               data-title="Former Mussolini's mansion - Our restaurant">
+                <div>
+                    <img class="cropped2" src="home_images/mussolini's_Mansion.jpg">
+                </div>
+            </a>
+            <a href="home_images/mussolini's_Manision_interior.jpg" data-lightbox="b"
+               data-title="Former Mussolini's mansion - Our restaurant">
+                <div>
+                    <img class="cropped2" src="home_images/mussolini's_Manision_interior.jpg">
+                </div>
+            </a>
+
+            <a href="home_images/dish.jpg" data-lightbox="b" data-title="Panna Cotta">
+                <div>
+                    <img class="cropped2" src="home_images/dish.jpg">
+                </div>
+            </a>
+            <a href="home_images/cheff.jpg" data-lightbox="b" data-title="True Italian gourmand">
+                <div>
+                    <img class="cropped2" src="home_images/cheff.jpg">
+                </div>
+            </a>
+            <a href="home_images/cheff3.jpg" data-lightbox="b" data-title="Mamma Mia!">
+                <div>
+                    <img class="cropped2" src="home_images/cheff3.jpg">
+                </div>
+            </a>
+            <a href="home_images/soup.jpg" data-lightbox="b" data-title="Soup">
+                <div>
+                    <img class="cropped2" src="home_images/soup.jpg">
+                </div>
+            </a>
+            <a href="home_images/pasta.jpg" data-lightbox="b" data-title="Our great pasta">
+                <div>
+                    <img class="cropped2" src="home_images/pasta.jpg">
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -120,24 +144,45 @@
     <div class="contacts row">
         <div class="col-2"></div>
         <div class="col-8 my_wrapper">
-            <div class="text_1">
+            <div class="text_1" id="contacts">
                 CONTACTS
                 <form>
-                    <div>
-                        <div>
-                            <p>Name<input type="text" placeholder/></p>
-                            <p>Surname<input type="text" placeholder/></p>
-                            <p>Subject<input type="text" placeholder/></p>
-                            <div>
-                                <label for="koment">Message</label>
-                            </div>
-                            <div>
-                                <textarea id="koment" placeholder></textarea>
-                            </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label class="my_height" for="name">Name</label>
+                        </div>
+                        <div class="col-11">
+                            <input class="my_height" type="text" id="name" placeholder>
                         </div>
                     </div>
-
+                    <div class="row">
+                        <div class="col-1">
+                            <label class="my_height" for="surname">Surname</label>
+                        </div>
+                        <div class="col-11">
+                            <input class="my_height" type="text" id="surname" placeholder>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label class="my_height" for="subject">Subject</label>
+                        </div>
+                        <div class="col-11">
+                            <input class="my_height" type="text" id="subject" placeholder>
+                        </div>
+                    </div>
                     <div class="row center">
+                        <div>
+                            <label for="koment">Message</label>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-1"></div>
+                        <div class="col-11">
+                            <textarea class="right" id="koment" placeholder></textarea>
+                        </div>
+                    </div>
+                    <div class="">
                         <button>SEND</button>
                     </div>
                 </form>

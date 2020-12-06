@@ -28,19 +28,22 @@
 .menu.basic-visible {
   background-color: #fff;
   box-shadow: 0px 1px 1px 1px #8d8d8d42;
+
   a {
     color: black !important;
   }
 }
 
 .menu.basic-transparent {
-  background-color: transparent;
+  background-color: #0000008c;
   box-shadow: none;
+
   a {
     color: white !important;
   }
 }
-body{
+
+body {
   overflow-x: hidden;
 }
 
@@ -53,7 +56,7 @@ body{
   height: 100%
 }
 
-.head {
+.FascistManifesto {
   font-size: 16px;
   color: #5b5959;
   margin-top: 120px;
@@ -69,26 +72,39 @@ body{
   color: #5b5959;
   margin-top: 120px;
 
-  div {
-    width: 312px;
-    height: 312px;
+  a {
+    div {
+      width: 312px;
+      height: 312px;
+      overflow: hidden;
+      img {
+        transition: transform .9s ease;
 
-    img {
-
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
     }
   }
 }
+
 
 .my_wrapper {
   padding: 0 160px 0 160px;
 }
 
-.text_1{
+.text_1 {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: -100px;
   padding: 16px;
   text-align: center;
+}
+
+.cropped1 {
+  width: 1920px;
+  height: 1080px;
+  object-fit: cover;
 }
 
 .cropped2 {
@@ -101,6 +117,7 @@ body{
 
 .logo {
   height: 50px;
+  width: 181px;
 }
 
 .footer {
@@ -116,11 +133,11 @@ body{
 
   div {
     text-align: center;
-    margin:30px;
+    margin: 30px;
   }
 
-  img{
-    margin:30px;
+  img {
+    margin: 30px;
     height: 50px;
     width: 181px;
   }
@@ -132,13 +149,109 @@ hr {
   width: 70%;
 }
 
-iframe{
+iframe {
   width: 100%;
   margin-top: 70px;
   height: 600px;
   filter: grayscale(100%);
+  border: none;
 }
 
-.text-about-us{
+.text-about-us {
   margin: 70px 0 120px 0;
+}
+
+input {
+  background-color: #efefef;
+  margin-left: 20px;
+  border: 1px solid #737373;
+  width: 77%;
+  height: 33px;
+}
+
+textarea{
+  width: 77%;
+}
+
+label {
+  font-size: 16px;
+  margin: 0 0 0 66px;
+  align-self: center;
+}
+
+
+p {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+button {
+  font-size: 17px;
+  margin: 25px -460px 60px 30px;
+  padding: 16px 30px 16px 30px;
+  transition: all 500ms;
+  border: 1px solid black;
+}
+
+button:hover {
+  font-size: 17px;
+  color: #efefef;
+  background-color: black;
+  transition: all 500ms;
+  padding: 16px 30px 16px 30px;
+}
+
+.my_row {
+  display: flex;
+}
+
+.align_right {
+  align-self: self-end;
+}
+
+.main_iamge1 {
+  width: 100%;
+}
+
+.my_height {
+  height: 50%;
+}
+
+form {
+  .row {
+    .col-1 {
+      display: flex;
+    }
+  }
+}
+
+.right{
+  margin-left: 22px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+.logo_pic{
+  width: 181px;
+}
+
+h1{
+  position: absolute;
+  font-size: 130px;
+  color: white;
+  top: 29%;
+  left: 50%;
+  margin: 0 0 0 -288px;
+}
+
+h3{
+  position: absolute;
+  font-size: 80px;
+  color: white;
+  top: 45%;
+  left: 50%;
+  margin: 0 0 0 -288px;
 }
